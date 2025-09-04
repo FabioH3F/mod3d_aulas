@@ -9,6 +9,13 @@
 static void display(void)
 {
     glClear(GL_COLOR_BUFFER_BIT);
+    //define area de enquadramento da cena
+    gluOrtho2D(-3, 3, -3, 3);
+    glBegin(GL_LINES);
+        glVertex2f(-2.0f, 0.0f);
+        glVertex2f(2.0f, 0.0f);
+    glEnd();
+    glFlush();
 }
 
 int main(int argc, char *argv[])
@@ -16,6 +23,8 @@ int main(int argc, char *argv[])
     glutInit(&argc, argv);
     glutInitWindowSize(640,480);
     glutInitWindowPosition(10,10);
+
+    //as letras maiuscula sao conatntes
     glutInitDisplayMode(GLUT_RGB | GLUT_SINGLE);
     glutCreateWindow("GLUT Shapes");
     glutDisplayFunc(display);
