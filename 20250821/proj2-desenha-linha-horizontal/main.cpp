@@ -13,7 +13,7 @@
 
 static void display(void)
 {
-
+    glClear(Gl_)
 }
 
 
