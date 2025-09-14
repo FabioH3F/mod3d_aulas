@@ -1,12 +1,12 @@
 # depslib dependency file v1.0
-1757029256 source:c:\users\1510976\documents\github\mod3d_aulas\20250904\p1-linha-triangulo\main.cpp
+1757629056 source:c:\users\1510976\documents\github\mod3d_aulas\20250904\p1-linha-triangulo\main.cpp
 	<GL/glut.h>
 	<stdlib.h>
 
-1757023981 c:\users\1510976\documents\github\mod3d_aulas\freeglut\include\gl\glut.h
+1757629056 c:\users\1510976\documents\github\mod3d_aulas\freeglut\include\gl\glut.h
 	"freeglut_std.h"
 
-1757023981 c:\users\1510976\documents\github\mod3d_aulas\freeglut\include\gl\freeglut_std.h
+1757629056 c:\users\1510976\documents\github\mod3d_aulas\freeglut\include\gl\freeglut_std.h
 	<windows.h>
 	<EGL/egl.h>
 	<GLES/gl.h>
