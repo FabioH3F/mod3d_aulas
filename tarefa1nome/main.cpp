@@ -1,16 +1,20 @@
 /*
  * by: fabio
- * proj. desenho linha e triangulo
+ * proj. tarefa1
  */
 
 #include <GL/glut.h>
 #include <stdlib.h>
 
 GLfloat escala = 0.3f;
+GLfloat rotaciona = 0.0f;
+GLfloat mexex = 0.0f;
+GLfloat mexey = 0.0f;
 
 //função para interação de teclado
 void listeningKey(unsigned char tecla, GLint col, GLint linha)
 {
+
     switch(tecla)
     {
         case '+':escala=escala+0.05f;
@@ -18,6 +22,31 @@ void listeningKey(unsigned char tecla, GLint col, GLint linha)
         case '-':escala=escala-0.05f;
                 break;
     }
+
+    switch(tecla)
+    {
+        case 'q':rotaciona=rotaciona+1.0f;
+                break;
+        case 'e':rotaciona=rotaciona-1.0f;
+                break;
+    }
+
+    switch(tecla)
+    {
+        case 'a':mexex=mexex+1.0f;
+                break;
+        case 'd':mexex=mexex-1.05f;
+                break;
+    }
+
+    switch(tecla)
+    {
+        case 'w':mexey=mexey+1.0f;
+                break;
+        case 's':mexey=mexey-1.0f;
+                break;
+    }
+
     glutPostRedisplay();
     //display();
 }
@@ -34,13 +63,21 @@ static void display(void)
     gluOrtho2D(-3, 3, -3, 3);
 
     //move o objeto
-    glTranslatef(-2.0f, 2.0f, 0.0f);
+    glTranslatef(0.0f, 0.0f, 0.0f);
 
     /*rotacina o objeto
     ordem dos parmetros ANG, X, Y, Z*/
-    glRotatef(45.0f, 0.0f, 0.0f, 1.0f);
+
+
+    glRotatef(rotaciona, 0.0f, 0.0f, 1.0f);
+
 
     glScalef(escala, escala, 0);
+
+    glTranslatef(mexex, 0.0f, 0.0f);
+
+    glTranslatef(0.0f, mexey, 0.0f);
+
 
     //define a matrix de trnsformação dos modelos "não muda o objeto de lugar"
     glMatrixMode(GL_MODELVIEW);
