@@ -33,9 +33,9 @@ void listeningKey(unsigned char tecla, GLint col, GLint linha)
 
     switch(tecla)
     {
-        case 'a':mexex=mexex+1.0f;
+        case 'd':mexex=mexex+1.0f;
                 break;
-        case 'd':mexex=mexex-1.05f;
+        case 'a':mexex=mexex-1.05f;
                 break;
     }
 
