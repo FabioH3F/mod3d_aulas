@@ -17,36 +17,26 @@ void listeningKey(unsigned char tecla, GLint col, GLint linha)
 
     switch(tecla)
     {
-        case '+':escala=escala+0.05f;
-                break;
-        case '-':escala=escala-0.05f;
-                break;
-    }
 
-    switch(tecla)
-    {
+        case '+':if (escala < 0.35f ){escala += 0.02f;}
+                break;
+        case '-':if (escala > 0.1f){escala=escala-0.05f;}
+                break;
         case 'q':rotaciona=rotaciona+1.0f;
                 break;
         case 'e':rotaciona=rotaciona-1.0f;
                 break;
-    }
 
-    switch(tecla)
-    {
         case 'd':mexex=mexex+1.0f;
                 break;
         case 'a':mexex=mexex-1.05f;
                 break;
-    }
 
-    switch(tecla)
-    {
         case 'w':mexey=mexey+1.0f;
                 break;
         case 's':mexey=mexey-1.0f;
                 break;
     }
-
     glutPostRedisplay();
     //display();
 }
@@ -60,15 +50,13 @@ static void display(void)
     //seta a matrix identidade para a câmera
     glLoadIdentity();
     //define área de enquadramento da cena
-    gluOrtho2D(-3, 3, -3, 3);
+    gluOrtho2D(-3.0, 3.0, -3.0, 3.0);
 
     //move o objeto
     glTranslatef(0.0f, 0.0f, 0.0f);
 
     /*rotacina o objeto
     ordem dos parmetros ANG, X, Y, Z*/
-
-
     glRotatef(rotaciona, 0.0f, 0.0f, 1.0f);
 
 
@@ -79,7 +67,7 @@ static void display(void)
     glTranslatef(0.0f, mexey, 0.0f);
 
 
-    //define a matrix de trnsformação dos modelos "não muda o objeto de lugar"
+    //define a matrix de transformação dos modelos "não muda o objeto de lugar"
     glMatrixMode(GL_MODELVIEW);
     //seta a matrix identidade para o modelos
     glLoadIdentity();
