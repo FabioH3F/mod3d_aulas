@@ -1,7 +1,9 @@
 # depslib dependency file v1.0
-1758325122 source:d:\mod3d_aulas\mod3d_aulas\tarefa1nome\main.cpp
+1758399271 source:d:\mod3d_aulas\mod3d_aulas\tarefa1nome\main.cpp
+	<stdio.h>
 	<GL/glut.h>
 	<stdlib.h>
+	<iostream>
 
 1757873124 d:\mod3d_aulas\mod3d_aulas\freeglut\include\gl\glut.h
 	"freeglut_std.h"
