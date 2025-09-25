@@ -50,9 +50,10 @@ int main(int argc, char *argv[])
     glutInit(&argc, argv);
     glutInitWindowSize(640,480);
     glutInitWindowPosition(10,10);
-    glutInitDisplayMode(GLUT_RGB | GLUT_SINGLE);
+    glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
     glutCreateWindow("GLUT Shapes");
     glClearColor(1, 1, 1, 0);
+    glClear(GL_COLOR_BUFFER_BIT);
     glutDisplayFunc(display);
     glutMouseFunc(mouse);
     glutMainLoop();
