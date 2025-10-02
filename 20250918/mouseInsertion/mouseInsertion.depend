@@ -5,3 +5,23 @@
 	<stdlib.h>
 	<time.h>
 
+1758925078 source:d:\mod3d_aulas\mod3d_aulas\20250918\mouseinsertion\main.cpp
+	<GL/glut.h>
+	<stdlib.h>
+	<stdlib.h>
+	<time.h>
+
+1757873124 d:\mod3d_aulas\mod3d_aulas\freeglut\include\gl\glut.h
+	"freeglut_std.h"
+
+1757873124 d:\mod3d_aulas\mod3d_aulas\freeglut\include\gl\freeglut_std.h
+	<windows.h>
+	<EGL/egl.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
