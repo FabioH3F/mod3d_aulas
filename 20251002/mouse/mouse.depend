@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1759528715 source:d:\mod3d_aulas\mod3d_aulas\20251002\mouse\main.cpp
+	<GL/glut.h>
+	<stdlib.h>
+	<time.h>
+
+1757873124 d:\mod3d_aulas\mod3d_aulas\freeglut\include\gl\glut.h
+	"freeglut_std.h"
+
+1757873124 d:\mod3d_aulas\mod3d_aulas\freeglut\include\gl\freeglut_std.h
+	<windows.h>
+	<EGL/egl.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+

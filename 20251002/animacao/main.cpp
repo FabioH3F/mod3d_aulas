@@ -56,6 +56,7 @@ void Timer(int value)//aqui tem a movimentacao de quadros por tempo
 void AlteraTamanhoJanela(GLsizei w, GLsizei h)
 {
     printf("\n w: %d h: %d ", w, h);
+    //printf, clicou no quadrado bool
     //viewport eh a posicao da camera
     //para 3d eh legal usar 4 VP (z, y, x, pesp.)
     glViewport(0, 0, w, h);

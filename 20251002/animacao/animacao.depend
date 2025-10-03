@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1759447424 source:d:\mod3d_aulas\mod3d_aulas\20251002\animacao\main.cpp
+1759448214 source:d:\mod3d_aulas\mod3d_aulas\20251002\animacao\main.cpp
 	<windows.h>
 	<GL/freeglut.h>
 	<stdio.h>
