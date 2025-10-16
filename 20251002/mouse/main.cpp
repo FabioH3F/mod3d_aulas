@@ -1,5 +1,6 @@
 #include <GL/glut.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 float x1, y1, x2, y2;
 int clickCount = 0;
@@ -14,6 +15,7 @@ void mouse(int button, int state, int mousex, int mousey)
             x1 = mousex;
             y1 = 480 - mousey;
             clickCount = 1;
+            printf("clique na tela\n");
         }
         else
         {
@@ -21,6 +23,7 @@ void mouse(int button, int state, int mousex, int mousey)
             y2 = 480 - mousey;
             clickCount = 0;
             check = true;
+            printf("clique na tela\n");
         }
     }
     else if (button == GLUT_RIGHT_BUTTON && state == GLUT_DOWN)

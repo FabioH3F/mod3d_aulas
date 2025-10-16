@@ -1,8 +1,8 @@
 # depslib dependency file v1.0
-1759528715 source:d:\mod3d_aulas\mod3d_aulas\20251002\mouse\main.cpp
+1760652283 source:d:\mod3d_aulas\mod3d_aulas\20251002\mouse\main.cpp
 	<GL/glut.h>
 	<stdlib.h>
-	<time.h>
+	<stdio.h>
 
 1757873124 d:\mod3d_aulas\mod3d_aulas\freeglut\include\gl\glut.h
 	"freeglut_std.h"
