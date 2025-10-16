@@ -1,15 +1,10 @@
 
 #include<GL/glut.h>
 #include<stdlib.h>
-#include<stdio.h>
-#include<time.h>
-int x=0;
 void DesenhaTextoStroke(char *aux)
 {
-    char *p;
-    p = aux;
-    while(*p)
-        glutStrokeCharacter(GLUT_STROKE_ROMAN,*p++);
+    while(*aux)
+        glutStrokeCharacter(GLUT_STROKE_ROMAN,*aux++);
 }
 void display(void)
 {
