@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1760655144 source:d:\mod3d_aulas\mod3d_aulas\20251016\p1-circulo\p1-circulo\main.cpp
+1760656205 source:d:\mod3d_aulas\mod3d_aulas\20251016\p1-circulo\p1-circulo\main.cpp
 	<GL/glut.h>
 	<stdio.h>
 	<math.h>
